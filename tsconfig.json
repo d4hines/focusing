@@ -1,0 +1,18 @@
+{
+  "extends": "plasmo/templates/tsconfig.base",
+  "exclude": ["node_modules"],
+  "include": [
+    ".plasmo/index.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./websocket_hook.js",
+  ],
+  "compilerOptions": {
+    "paths": {
+      "~*": ["./src/*"],
+    },
+    "baseUrl": ".",
+    "allowJs": true,
+    "strict": true,
+  },
+}
