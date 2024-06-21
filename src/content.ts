@@ -10,6 +10,9 @@ const whitelist = [
   "michaelnotebook.com/",
   "supermemo.guru",
   "super-memory.com",
+  "bewelltuned.com",
+  "techinterviewhandbook.org",
+  "leetcode.com",
 
   // Reference
   "crates.io",
@@ -18,13 +21,13 @@ const whitelist = [
   "gitlab.com",
   "sourcegraph.com",
   "npmjs.com",
-  "openai.com",
   "plasmo.com",
   "man7.org/",
   "visualstudio.com",
   "doc.rust-lang.org/",
   "stackoverflow.com",
   "stackexchange.com/",
+  "react.dev",
 
   // Coms
   "slack.com",
@@ -35,13 +38,19 @@ const whitelist = [
   "office.com",
   "jira.com",
   "notion.com",
+  "atlassian",
 
   // Infra
   "namecheap.com",
   "cloudlfare.com",
+  "amazon",
+  "aws",
 
   // Tools
+  "openai.com",
+  "chatgpt.com",
   "excalidraw.com",
+  "roamresearch.com",
 
   // Punishment
   "https://blocked.freedom.to/",
