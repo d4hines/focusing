@@ -28,6 +28,7 @@ const whitelist = [
   "stackoverflow.com",
   "stackexchange.com/",
   "react.dev",
+  "nushell.sh",
 
   // Coms
   "slack.com",
@@ -45,12 +46,17 @@ const whitelist = [
   "cloudlfare.com",
   "amazon",
   "aws",
+  "vultr.com",
 
   // Tools
   "openai.com",
   "chatgpt.com",
   "excalidraw.com",
   "roamresearch.com",
+
+  // Really a category unto itself
+  "youtube.com",
+  "youtu.be",
 
   // Punishment
   "https://blocked.freedom.to/",
