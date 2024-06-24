@@ -29,11 +29,14 @@ const whitelist = [
   "stackexchange.com/",
   "react.dev",
   "nushell.sh",
+  "archlinux.org",
 
   // Coms
   "slack.com",
   "google.com",
   "gmail.com",
+  "zoom",
+  "unroll.me",
   "live.com",
   "microsoft.com",
   "office.com",
@@ -47,6 +50,7 @@ const whitelist = [
   "amazon",
   "aws",
   "vultr.com",
+  "dropbox.com",
 
   // Tools
   "openai.com",
@@ -59,18 +63,24 @@ const whitelist = [
   "youtu.be",
 
   // Punishment
-  "https://blocked.freedom.to/",
+  "blocked.freedom.to",
+
+  // Personal
+  "practicebetter.io",
+  "wellsfargo.com"
 ];
 
-let navigateAway = true;
-for (const allowed of whitelist) {
-  if (window.location.href.includes(allowed)) {
-    navigateAway = false;
-    break;
+if (new Date().getDay() !== 6) {
+  let navigateAway = true;
+  for (const allowed of whitelist) {
+    if (window.location.origin.includes(allowed)) {
+      navigateAway = false;
+      break;
+    }
   }
-}
 
-if (navigateAway) {
-  alert("Reflect on the pain of clicking this alert button.");
-  window.location.href = "https://blocked.freedom.to/";
+  if (navigateAway) {
+    alert("Reflect on the pain of clicking this alert button.");
+    window.location.href = "https://blocked.freedom.to/";
+  }
 }
