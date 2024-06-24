@@ -67,7 +67,6 @@ const whitelist = [
 
   // Personal
   "practicebetter.io",
-  "wellsfargo.com"
 ];
 
 if (new Date().getDay() !== 6) {
